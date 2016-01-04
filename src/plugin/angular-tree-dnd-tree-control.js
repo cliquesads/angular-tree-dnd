@@ -133,6 +133,9 @@ angular.module('ntt.TreeDnD')
                             }
                         }
                     },
+                    _clear_tree_nodes: function(){
+                        scope.tree_nodes = [];
+                    },
                     expand_node:                       function (node) {
                         node = node || tree.selected_node;
                         if (node) {
